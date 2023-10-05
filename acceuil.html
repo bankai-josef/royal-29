@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Untitled-1.css" type="text/css">
+    <script src="e22204613.js"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+
+
+
+    <header>
+       
+
+        <img src="https://i.postimg.cc/85sBPVmV/royal-29-logo.png" alt="attack on titan logo" width="200px" />
+
+        
+        <h1>Royal 29</h1>
+
+            </script>
+            <main>
+                <h1>Bienvenue chez notre Restaurant !</h1>
+                <div id="nom-utilisateur"></div>
+                
+                <!-- Autre contenu de la page -->
+            </main>
+            
+
+        
+    </header>
+    <script>
+        let sIndex = 0;
+        setInterval(autoSlide, 2000);
+
+        function autoSlide() {
+            sIndex = sIndex + 1;
+            displaySlide();
+        }
+
+        function nextSlide(n) {
+            sIndex = sIndex + n;
+            displaySlide();
+        }
+
+        function displaySlide() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+
+            if (sIndex >= slides.length) {
+                sIndex = 0;
+            }
+
+            if (sIndex < 0) {
+                sIndex = slides.length - 1
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[sIndex].style.display = "block";
+
+        }
+
+
+    </script>
+    <nav>
+
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="commander.html">Commander</a></li>
+            
+        </ul>
+        
+    </nav>
+    <div id="nom-utilisateur"></div>
+    <section class="welcome">
+
+
+            <div class="slides">
+                <img src="https://media.letelegramme.fr/api/v1/images/view/64b522fec520d376ed1b7ca0/web_golden_xxl/64b522fec520d376ed1b7ca0.1" width="500px">
+                <img src="https://i.postimg.cc/NfMMJ7kL/Whats-App-Image-2023-09-29-18-19-51-c7dc5cd1.jpg" alt="attack on titan logo" width="700px" />              
+
+            </div>
+
+
+        </div>
+        <h2>Bienvenue chez Royal 29 </h2>
+
+        <p> 
+            Le restaurant Royal 29 est un établissement de choix pour les amateurs de cuisine méditerranéenne et italienne. 
+            Notre menu varié offre une délicieuse combinaison de kebabs, de pizzas et d'autres plats alléchants. Que vous soyez 
+            d'humeur pour un kebab savoureux garni de viandes grillées et d'épices exquises ou que vous préfériez une pizza fraîchement 
+            préparée avec des ingrédients de qualité, nous avons quelque chose pour tous les palais. Rejoignez-nous pour une expérience culinaire 
+            exceptionnelle au Royal 29, où la diversité des saveurs rencontre la convivialité dans un cadre accueillant.</p>
+    </section>
+    <footer>
+            <!-- Contenu du pied de page -->
+            <div id="nom-utilisateur"></div>
+        <p>&copy; 2023 Royal 29</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Récupérez le nom d'utilisateur depuis le stockage local
+            var nomUtilisateur = localStorage.getItem("nom_utilisateur");
+
+            // Vérifiez si un nom d'utilisateur a été stocké
+            if (nomUtilisateur) {
+                // Affichez le nom d'utilisateur où vous le souhaitez sur la page
+                var nomUtilisateurElement = document.getElementById("nom-utilisateur");
+                if (nomUtilisateurElement) {
+                    nomUtilisateurElement.textContent = "Bonjour, " + nomUtilisateur + " !";
+                }
+            }
+
+            // Gérez la déconnexion
+            var deconnexion = document.getElementById("deconnexion");
+            if (deconnexion) {
+                deconnexion.addEventListener("click", function () {
+                    // Supprimez le nom d'utilisateur du stockage local
+                    localStorage.removeItem("nom_utilisateur");
+                    // Redirigez l'utilisateur vers la page de connexion
+                    window.location.href = "connexion.html";
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
