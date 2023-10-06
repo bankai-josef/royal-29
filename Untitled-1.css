@@ -1,0 +1,277 @@
+/* ... Styles précédents ... */
+
+/* Styles spécifiques pour la page Galerie */
+.gallery {
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent pour le contenu */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.image {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent pour le contenu */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://rs-menus-api.roocdn.com/images/942e4d30-047b-4753-ab0c-f5b02245ccbb/image.jpeg?width=1200&height=630&fit=crop'); /* Chemin vers votre image de fond */
+    background-size: cover; /* Redimensionne l'image pour couvrir tout l'arrière-plan */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffb700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces de liste */
+    padding: 0; /* Supprime la marge interne par défaut */
+    background-color: #444; /* Couleur de fond pour la barre de navigation */
+    text-align: center; /* Centre les éléments de la barre de navigation horizontalement */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section.welcome {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent pour le contenu */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+/* ... Styles précédents ... */
+
+/* Styles spécifiques pour la page Menu */
+/* ... Styles précédents ... */
+
+/* Styles spécifiques pour la page Menu */
+.menu {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px; /* Espace entre les éléments du menu */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8); /* Arrière-plan semi-transparent pour le contenu */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-image {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.menu-image img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    width: 1000px;
+}
+/* ... Styles précédents ... */
+
+/* Styles spécifiques pour la page Commander */
+.order {
+    margin: 20px;
+    text-align: center;
+}
+
+.order h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e65500;
+}
+.inscription-link {
+    color: #333; /* Couleur du texte du lien */
+    text-decoration: none; /* Supprime la décoration de lien par défaut (soulignement) */
+    font-weight: bold; /* Met en gras le texte du lien */
+    margin-left: 20px; /* Ajoute un peu d'espace à gauche du lien */
+}
+
+.inscription-link:hover {
+    color: #555; /* Couleur du texte du lien au survol */
+}
+/* Styles pour le lien de connexion */
+.connexion-link {
+    color: #333; /* Couleur du texte du lien */
+    text-decoration: none; /* Supprime la décoration de lien par défaut (soulignement) */
+    font-weight: bold; /* Met en gras le texte du lien */
+    margin-left: 20px; /* Ajoute un peu d'espace à gauche du lien */
+}
+
+.connexion-link:hover {
+    color: #555; /* Couleur du texte du lien au survol */
+}
+/* Styles pour la page d'inscription */
+
+.inscription {
+    max-width: 500px; /* Définir une largeur maximale pour le formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond pour la section du formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère au formulaire */
+    border-radius: 5px; /* Arrondir les coins du formulaire */
+}
+
+.inscription h2 {
+    font-size: 24px; /* Taille de police pour le titre du formulaire */
+    margin-bottom: 20px; /* Ajouter de l'espace sous le titre du formulaire */
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+.inscription label {
+    display: block; /* Afficher les étiquettes du formulaire sur une nouvelle ligne */
+    font-weight: bold; /* Mettre en gras les étiquettes du formulaire */
+    margin-bottom: 5px; /* Ajouter de l'espace sous les étiquettes du formulaire */
+}
+
+.inscription input[type="text"],
+.inscription input[type="email"],
+.inscription input[type="date"],
+.inscription input[type="tel"],
+.inscription input[type="password"] {
+    width: 100%; /* Remplir la largeur de la section du formulaire */
+    padding: 10px; /* Ajouter de l'espace autour des champs du formulaire */
+    margin-bottom: 15px; /* Ajouter de l'espace sous les champs du formulaire */
+    border: 1px solid #ccc; /* Ajouter une bordure autour des champs du formulaire */
+    border-radius: 4px; /* Arrondir les coins des champs du formulaire */
+}
+
+.inscription button {
+    background-color: #333; /* Couleur de fond pour le bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    padding: 10px 20px; /* Ajouter de l'espace autour du bouton */
+    font-size: 16px; /* Taille de police pour le bouton */
+    border-radius: 4px; /* Arrondir les coins du bouton */
+    cursor: pointer; /* Curseur de type main pour le bouton */
+    width: 100%; /* Remplir la largeur de la section du formulaire */
+}
+
+.inscription button:hover {
+    background-color: #555; /* Couleur de fond au survol du bouton */
+}
+
+/* Styles pour les messages d'erreur */
+#error-message {
+    color: #ff0000; /* Couleur du texte en rouge pour les messages d'erreur */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Styles par défaut pour les écrans larges */
+body {
+    font-size: 16px;
+  }
+  
+  /* Styles pour les écrans de taille moyenne (par exemple, téléphones) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
